@@ -19,7 +19,7 @@ func TestGetUserNoUserFound(t *testing.T) {
 
 func TestGetUserFound(t *testing.T) {
 	user, err := UserDao.GetUser(123)
-
+  
 	assert.Nil(t, err)
 	assert.NotNil(t, user)
 
